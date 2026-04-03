@@ -67,3 +67,8 @@ python evaluate_experiment.py
 
 ## Attribution
 MVTec 3D-AD evaluation scripts are from the [official MVTec 3D-AD dataset page](https://www.mvtec.com/company/research/datasets/mvtec-3d-ad).
+
+## Visualization Examples (Dowel category)
+
+See [`visualizations/`](visualizations/) for full results 
+(RGB input, surface normal, anomaly map, overlay, GT mask).
