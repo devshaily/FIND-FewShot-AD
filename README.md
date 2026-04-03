@@ -1,15 +1,20 @@
 # FIND: Few-Shot Anomaly Inspection (ICCV 2025)
 
-Unofficial PyTorch reimplementation of the paper:
-
-**FIND: Few-Shot Anomaly Inspection with Normal-Only Multi-Modal Data**
-
+Unofficial PyTorch reimplementation of the paper:  
+**FIND: Few-Shot Anomaly Inspection with Normal-Only Multi-Modal Data**  
 📄 [Paper](https://openaccess.thecvf.com/content/ICCV2025/papers/Li_FIND_Few-Shot_Anomaly_Inspection_with_Normal-Only_Multi-Modal_Data_ICCV_2025_paper.pdf)
 
-
-> **Note:** No official code has been released by the authors.
-> `v2-paper-aligned` branch is the most up-to-date implementation. 
+> **Note:** No official code has been released by the authors.  
+> `v2-paper-aligned` branch is the most up-to-date implementation.  
 > This is an independent reimplementation based on the paper.
+
+---
+
+## ⭐ If you find this useful
+If this reimplementation helped your research or learning, please consider **starring the repo** — it helps others find it and motivates further work!
+
+[![GitHub stars](https://img.shields.io/github/stars/devshaily/FIND-FewShot-AD?style=social)](https://github.com/devshaily/FIND-FewShot-AD/stargazers)
+
 ---
 
 ## Overview
@@ -28,18 +33,24 @@ This repository provides a code reimplementation of FIND for few-shot anomaly in
 > Full results across all 10 categories coming soon.
 
 ## Requirements
+```bash
 pip install torch torchvision timm tifffile open3d tqdm scikit-learn opencv-python
+```
 
 ## Dataset
-Download MVTec 3D-AD from https://www.mvtec.com/company/research/datasets/mvtec-3d-ad
+Download MVTec 3D-AD from [here](https://www.mvtec.com/company/research/datasets/mvtec-3d-ad).
 
 ## Training
-Set CATEGORY in find_train.py then run:
+Set `CATEGORY` in `find_train.py` then run:
+```bash
 python find_train.py
+```
 
 ## Evaluation
+```bash
 python find_eval.py
 python evaluate_experiment.py
+```
 
 ## File Attribution
 
@@ -47,13 +58,12 @@ python evaluate_experiment.py
 |---|---|
 | `find_train.py` | Our reimplementation of FIND (ICCV 2025) |
 | `find_eval.py` | Our reimplementation of FIND (ICCV 2025) |
-| `evaluate_experiment.py` | Official MVTec 3D-AD evaluation scripts (modified)|
+| `evaluate_experiment.py` | Official MVTec 3D-AD evaluation scripts (modified) |
 | `generic_util.py` | Official MVTec 3D-AD evaluation scripts |
 | `pro_curve_util.py` | Official MVTec 3D-AD evaluation scripts |
 | `roc_curve_util.py` | Official MVTec 3D-AD evaluation scripts |
 | `lifind.yml` | Conda environment for training (CPU) |
 | `lifindgpu.yml` | Conda environment for training (GPU) |
 
-MVTec 3D-AD eval scripts are from:  
-https://www.mvtec.com/company/research/datasets/mvtec-3d-ad
----
+## Attribution
+MVTec 3D-AD evaluation scripts are from the [official MVTec 3D-AD dataset page](https://www.mvtec.com/company/research/datasets/mvtec-3d-ad).
