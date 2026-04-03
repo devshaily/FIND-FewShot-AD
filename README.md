@@ -8,6 +8,9 @@ Unofficial PyTorch reimplementation of the paper:
 > `v2-paper-aligned` branch is the most up-to-date implementation.  
 > This is an independent reimplementation based on the paper.
 
+> **Few-shot support:** K=5, 10, 50 supported via `K_SHOT` config.  
+> Full-shot results reported. Few-shot benchmark results coming soon..
+
 ---
 
 ## ⭐ If you find this useful
