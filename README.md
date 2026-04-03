@@ -6,12 +6,16 @@ Unofficial PyTorch reimplementation of the paper:
 
 📄 [Paper](https://openaccess.thecvf.com/content/ICCV2025/papers/Li_FIND_Few-Shot_Anomaly_Inspection_with_Normal-Only_Multi-Modal_Data_ICCV_2025_paper.pdf)
 
+
+> **Note:** No official code has been released by the authors.
+> `v2-paper-aligned` branch is the most up-to-date implementation. 
+> This is an independent reimplementation based on the paper.
 ---
 
 ## Overview
-This repository provides a code implementation of FIND for few-shot anomaly inspection using normal-only multi-modal data (e.g., RGB and surface normals).
+This repository provides a code reimplementation of FIND for few-shot anomaly inspection using normal-only multi-modal data (e.g., RGB and surface normals).
 
-## Results (Dowel, Full-shot, Single Run)
+## Reproduced Results (Dowel, Full-shot, Single Run)
 
 | Metric     | Ours   | Paper  |
 |------------|--------|--------|
@@ -19,6 +23,9 @@ This repository provides a code implementation of FIND for few-shot anomaly insp
 | P-AUROC    | 0.9872 | 0.995  |
 | AUPRO@30%  | 0.9732 | 0.986  |
 | AUPRO@1%   | 0.6136 | 0.982  |
+
+> Single run, single category (dowel, full-shot).  
+> Full results across all 10 categories coming soon.
 
 ## Requirements
 pip install torch torchvision timm tifffile open3d tqdm scikit-learn opencv-python
@@ -31,5 +38,22 @@ Set CATEGORY in find_train.py then run:
 python find_train.py
 
 ## Evaluation
+python find_eval.py
 python evaluate_experiment.py
+
+## File Attribution
+
+| File | Source |
+|---|---|
+| `find_train.py` | Our reimplementation of FIND (ICCV 2025) |
+| `find_eval.py` | Our reimplementation of FIND (ICCV 2025) |
+| `evaluate_experiment.py` | Official MVTec 3D-AD evaluation scripts (modified)|
+| `generic_util.py` | Official MVTec 3D-AD evaluation scripts |
+| `pro_curve_util.py` | Official MVTec 3D-AD evaluation scripts |
+| `roc_curve_util.py` | Official MVTec 3D-AD evaluation scripts |
+| `lifind.yml` | Conda environment for training (CPU) |
+| `lifindgpu.yml` | Conda environment for training (GPU) |
+
+MVTec 3D-AD eval scripts are from:  
+https://www.mvtec.com/company/research/datasets/mvtec-3d-ad
 ---
