@@ -56,8 +56,8 @@ python evaluate_experiment.py
 
 | File | Source |
 |---|---|
-| `find_train.py` | Our reimplementation of FIND (ICCV 2025) |
-| `find_eval.py` | Our reimplementation of FIND (ICCV 2025) |
+| `find_train.py` | Our reimplementation of FIND (ICCV 2025) — training pipeline |
+| `find_eval.py` | Our reimplementation of FIND (ICCV 2025) — inference & map saving |
 | `evaluate_experiment.py` | Official MVTec 3D-AD evaluation scripts (modified) |
 | `generic_util.py` | Official MVTec 3D-AD evaluation scripts |
 | `pro_curve_util.py` | Official MVTec 3D-AD evaluation scripts |
