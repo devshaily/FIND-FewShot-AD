@@ -52,7 +52,7 @@ ALPHA     = 0.5 if K_SHOT is None else 0.8                         # few-shot we
 EPOCHS    = 300
 LR        = 1e-4
 BATCH     = 2
-CATEGORY = "bagel"        # run 1
+CATEGORY = "dowel"        # run 1
 DATA_ROOT = r"D:\Deep_Learning\FIND\mvtec_3d_anomaly_detection"
 
 # ──────────────────────────────────────────────
